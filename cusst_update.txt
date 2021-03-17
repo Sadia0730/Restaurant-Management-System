@@ -1,0 +1,9 @@
+10-MAY-18
+
+Customer Name: Ahnaf Sadman
+
+Served by Vinit Anwar
+Item	Quantity	Unit Price	Price
+Chicken Jhal Fry	400	1	400
+Mixed Fried Rice	200	2	400
+Total Bill: 800 Taka
