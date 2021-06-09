@@ -1,7 +1,7 @@
 set serveroutput on
 Declare
     f utl_file.file_type;
-    line varchar(1000);
+    line varchar(1200);
     cid ORDERINFO.Order_id%type;
     menuid MENU.Menu_id%type;
     quantity MENUBILL.Quantity%type;
@@ -20,7 +20,7 @@ Begin
         quantity := regexp_substr(line,'[^,]+',1,3);
         
         
-        insert into MENU(Order_Id,Menu_Id,Quantity)
+        insert into MENUBILL(Order_Id,Menu_Id,Quantity)
         values(cid,menuid,quantity);
       /*  insert into cstmr(id,name,age) values (id,name,age);*/
         if line is null then exit;
