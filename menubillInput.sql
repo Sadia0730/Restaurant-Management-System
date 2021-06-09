@@ -20,7 +20,7 @@ Begin
         quantity := regexp_substr(line,'[^,]+',1,3);
         
         
-        insert into MENUBILL(Order_Id,Menu_Id,Quantity)
+        insert into MENU(Order_Id,Menu_Id,Quantity)
         values(cid,menuid,quantity);
       /*  insert into cstmr(id,name,age) values (id,name,age);*/
         if line is null then exit;
